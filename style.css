@@ -5,20 +5,24 @@
  
 
 
+html {
+    width: 100vw;
+    height: 100vh;
+    
+}
 body {
     background-image: url(imagens/2962646-paisagem-bela-noite-com-montanha-e-lago-vetor.jpg);
-    width: 95vw;
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-}
+
+} 
  header {
     background-image:linear-gradient(to right, #392F51, #733C59 );
     
     width: 95vw;
 
     text-align: center;
+    
  }
 
  nav {
@@ -27,12 +31,13 @@ body {
     display: inline-block;
     position: relative;
     left: -10px;
+    
 
     
  }
 
  nav a {
-    
+
     margin: 10px;
     padding: 5px;
     color: aliceblue;
@@ -53,7 +58,9 @@ body {
  main {
     margin: auto;
     max-width: 50vw;
-   
+    position: relative;
+    
+    
     
  }
  
@@ -69,10 +76,10 @@ body {
 } 
 
 p {
-   color: #F08271; 
+   color: aquamarine; 
    font-family: "Oswald", sans-serif;
      font-optical-sizing: auto;
-     font-size: 1.2em;
+     font-size: 1.3em;
      font-weight: 400;
      font-style: normal;
 }
@@ -81,8 +88,8 @@ p {
 img {
     width: 50px;
     position: absolute;
-    top: 5px;
-    left: 86%;  
+    top: -85px;
+    left: 99%;  
 }
 
 #redes {
@@ -107,4 +114,32 @@ img {
     position: absolute;
     top: 150px;
     left: 86%;
+}
+
+@media  screen and (max-width: 768px) {
+    
+   
+    .img1 {
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 92%;
+    left: 86%;
+    
+}
+
+.img2 {
+    width: 38px;
+    border-radius: 50%;
+    position: absolute;
+    top: 92%;
+    left: 75%;
+    
+}
+ 
+p {
+    color: #EF626F; 
+}
+
+
 }
