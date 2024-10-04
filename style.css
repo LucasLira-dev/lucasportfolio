@@ -3,29 +3,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
  
-
-
-html {
-    width: 100vw;
-    height: 100vh;
-    
+* {
+    margin: 0px;
+    padding: 0px;
 }
+
+
 body {
     background-image: url(imagens/2962646-paisagem-bela-noite-com-montanha-e-lago-vetor.jpg);
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 
 } 
  header {
     background-image:linear-gradient(to right, #392F51, #733C59 );
-    
-    width: 95vw;
-
+    width: 100vw;
     text-align: center;
+
     
  }
 
  nav {
+   
     padding: 20px;
     text-align: center;
     display: inline-block;
@@ -37,12 +39,12 @@ body {
  }
 
  nav a {
-
     margin: 10px;
     padding: 5px;
+    padding-bottom: 10px;
     color: aliceblue;
     text-decoration: none;
-    background-color: #F08271;
+    background-color: #EF626F;
     box-sizing: border-box;
  }
 
@@ -73,24 +75,31 @@ body {
      font-weight: 700;
      font-style: normal;
      padding-bottom: 0px;
+     padding-left: 5px;
 } 
 
 p {
    color: aquamarine; 
+   padding-top: 10px;
    font-family: "Oswald", sans-serif;
      font-optical-sizing: auto;
      font-size: 1.3em;
      font-weight: 400;
      font-style: normal;
+     line-height: 35px;
+     text-align: justify;
+     text-indent: 5px;
 }
 
 
 img {
+    
     width: 50px;
     position: absolute;
-    top: -85px;
+    top: -55px;
     left: 99%;  
 }
+
 
 #redes {
     box-sizing: border-box;
@@ -102,48 +111,75 @@ img {
     transition: transform 0.5, border 0.5s;
 }
 
+    
+
 .img1 {
     border-radius: 50%;
     position: absolute;
-    top: 80px;
+    top: 65px;
     left: 86%;
+    
+    
 }
 
 .img2 {
     border-radius: 50%;
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: 86%;
+    
 }
 
-@media  screen and (max-width: 768px) {
+
+@media  screen and (max-width: 600px) {
    body {
-    background-image: url(imagens/mo);
-    background-size: cover;
+    background-image: url(imagens/mobile.jpg);
+    background-size: auto;
     background-repeat: no-repeat;
+    background-position: left top;
+    height: 100vh;
+    width: 100vw;
    }
    
-    .img1 {
+   img {
+    width: 50px;
+    position: absolute;
+    top: -55px;
+    left: 55vw;  
+}
+   .img1 {
     width: 40px;
     border-radius: 50%;
-    position: absolute;
-    top: 92%;
-    left: 86%;
+    position: fixed;
+    
+    
+    
     
 }
 
 .img2 {
     width: 38px;
     border-radius: 50%;
-    position: absolute;
-    top: 92%;
-    left: 75%;
+    position: fixed;
+    
+    
     
 }
+   
+   
  
 p {
     color: #EF626F; 
 }
 
+
+section#ingles {
+    margin-top: 40px;
+    
+}
+
+section#ingles p {
+    color: #eb4757;
+}
 
 }
